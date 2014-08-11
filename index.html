@@ -9,21 +9,23 @@
 <body>
 	<div id="main">
 	<p class="title">Movie Quote Quiz</p>
-			<p class="startQuiz"><br />Do you think you know movies?<br /><br />
-			Try to name the movie<br/> that goes with the quote.</p>
+			<div id="startQuiz">
+			Think you know movies?  Try to name the movie<br/> that goes with the quote
+			</div>
+			<input type="submit" id="begin-btn" value="Begin">
 			<div id="questions">
 				<input type="radio" name="choice" id="choice1" value="0"><br />
 				<input type="radio" name="choice" id="choice2" value="1"><br />
 				<input type="radio" name="choice" id="choice3" value="2"><br />
 				<input type="radio" name="choice" id="choice4" value="3"><br />
+				<input type="radio" name="choice" id="choice4" value="4"><br />
 			</div>
-			<div id="correct-ans">
-			</div>
-			<input type="submit" id="begin-btn" value="Begin">
-			<input type="submit" id="submit-btn" value="Enter Guess">
+			<div id="result"></div>
+			<input type="submit" id="submit-btn" value="Enter Answer">
+			<input type="submit" id="next-btn" value="Next Question"
 			<input type="submit" id="restart-btn" value="Try Again?">
-			<div id="score"></div>
 	</div>
+	<div id="answersCorrect"></div>
 
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>

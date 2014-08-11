@@ -12,7 +12,7 @@ body {
 	margin-top: 55px;
 	text-align: center;
 }
-#begin-btn, #submit-btn, #restart-btn {
+#begin-btn, #submit-btn, #next-btn, #restart-btn {
   cursor: pointer;
   font-size: 18px;
   padding: 5px 10px;
@@ -27,21 +27,29 @@ body {
   color: #FFFFFF;
 }
 #questions{
-	text-align: left;
-	padding-left: 30%;
-	padding-top: 15px;
-	line-height: 35px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: left;
+  padding-left: 35%;
 }
+#answersCorrect{
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2em;
+  color: #7a8370;
+  line-height: 1.6em;
+  margin-top: 20px;
+}
+
 .title {
-	
-	font-size: 38px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #FF0000;
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 }
-.startQuiz {
-	font-size: 28px;
-	color: #000000;
-	font-weight: bold;
 
-}
+
+
+
