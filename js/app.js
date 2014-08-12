@@ -43,11 +43,8 @@ $(document).ready(function(){
 		}
 	];
 
-    $('#begin-btn').click(function(event){
-        event.preventDefault();
-        $(this).hide();
+    $('#begin-btn').click(function(){
         $('#startQuiz').hide();
-        $('#submit-btn').show();
     });
 
 
