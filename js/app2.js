@@ -45,6 +45,8 @@ $(document).ready(function(){
 		}
 	];
 
+
+
 	//general variables//
 	var userAnswers = 0;
     var userAnswer = "";
@@ -57,12 +59,12 @@ $(document).ready(function(){
         $("#submit-btn").show();
     });
 
-     //link choices to radio buttons spans
+      //link choices to radio buttons
     $("#questionsContainer").html(quotes[i].quote);
-    $("#firstChoice").append(quotes[i].choices[0]);
-    $("#secondChoice").append(quotes[i].choices[1]);
-    $("#thirdChoice").append(quotes[i].choices[2]);
-    $("#fourthChoice").append(quotes[i].choices[3]);
+    $("#first").append(quotes[i].choices[0]);
+    $("#second").append(quotes[i].choices[1]);
+    $("#third").append(quotes[i].choices[2]);
+    $("#fourth").append(quotes[i].choices[3]);
 
     // Submit Answer Button
     $('body').on('click', '#submit-btn', function () {
@@ -75,7 +77,7 @@ $(document).ready(function(){
             $("#result").html("Correct!");
             userAnswers += 1;
             $("#answerContainer").html(quotes[i].answer);
-            $("#submit-btn").hide();
+            $("#submit-hide").hide();
             $("#next-btn").show();
             $("#answersCorrect").show();
             $("#answersCorrect").html("Questions answered correctly: " + userAnswers +" of 5");
@@ -101,15 +103,15 @@ $(document).ready(function(){
         });
 
 	// set function on next question button
-    $('body').on('click', '#next-btn', function () {
+    $('body').on('click', '#next', function () {
         $('#submit-btn').show();
         $("#next-btn").hide();
         i = i + 1;
-        $("#questionsContainer").html(quotes[i].quote);
-        $("#firstChoice").html(quotes[i].choices[0]);
-        $("#secondChoice").html(quotes[i].choices[1]);
-        $("#thirdChoice").html(quotes[i].choices[2]);
-        $("#fourthChoice").html(quotes[i].choices[3]);
+        $("#questionContainer").html(quotes[i].quote);
+        $("#first").html(quotes[i].choices[0]);
+        $("#second").html(quotes[i].choices[1]);
+        $("#third").html(quotes[i].choices[2]);
+        $("#fourth").html(quotes[i].choices[3]);
         $("#answerContainer").html("");
         $("#result").html("");
         $("input:radio").prop('checked', false);
@@ -118,15 +120,15 @@ $(document).ready(function(){
 	// Function for Try Again
     $('body').on('click', '#restart-btn', function () {
         $(this).hide();
-        $("#next-btn").hide();
+        $("#next").hide();
         i = 0;
         userAnswers = 0;
         userAnswer = "";
-        $("#questionsContainer").html(quotes[i].quote);
-        $("#firstChoice").html(quotes[i].choices[0]);
-        $("#secondChoice").html(quotes[i].choices[1]);
-        $("#thirdChoice").html(quotes[i].choices[2]);
-        $("#fourthChoice").html(quotes[i].choices[3]);
+        $("#questionContainer").html(quotes[i].quote);
+        $("#first").html(quotes[i].choices[0]);
+        $("#second").html(quotes[i].choices[1]);
+        $("#third").html(quotes[i].choices[2]);
+        $("#fourth").html(quotes[i].choices[3]);
         $("#answerContainer").html("");
         $("#result").html("");
         $("input:radio").prop('checked', false);
@@ -137,4 +139,6 @@ $(document).ready(function(){
     $("#next-btn").hide();
     $("#restart-btn").hide();
     $("#answersCorrect").hide();
+  
+
 });

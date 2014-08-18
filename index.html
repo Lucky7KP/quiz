@@ -10,19 +10,24 @@
 	<div id="main">
 	<p class="title">Movie Quote Quiz</p>
 			<div id="startQuiz">
-			Think you know movies?  Try to name the movie<br/> that goes with the quote.<br />
+				<p class="subtitle">Think you know movies?<br /><br /> 
+				Try to name the movie<br/> that goes with the quote.</p><br /> 
 			<input type="submit" id="begin-btn" value="Begin">
 			</div>
-			<div id="questions">
+			<div id="questionsContainer">
 				<input type="radio" name="choice" id="choice1" value="0"><br />
+					<span id="firstChoice"></span>
 				<input type="radio" name="choice" id="choice2" value="1"><br />
+					<span id="secondChoice"></span>
 				<input type="radio" name="choice" id="choice3" value="2"><br />
+					<span id="thirdChoice"></span>	
 				<input type="radio" name="choice" id="choice4" value="3"><br />
-				<input type="radio" name="choice" id="choice4" value="4"><br />
+					<span id="fourthChoice"></span>
 			</div>
 			<div id="result"></div>
+			<div id="answerContainer"></div>
 			<input type="submit" id="submit-btn" value="Enter Answer">
-			<input type="submit" id="next-btn" value="Next Question"
+			<input type="submit" id="next-btn" value="Next Question">
 			<input type="submit" id="restart-btn" value="Try Again?">
 	</div>
 	<div id="answersCorrect"></div>

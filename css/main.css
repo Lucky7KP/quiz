@@ -19,23 +19,39 @@ body {
   margin-top: 20px;
   border-radius: 10px;
   color: #FF0000;
-  background: #FF0000;
   text-align: center;
   text-shadow: 1px 1px rgba(0,0,0,.3);
   vertical-align: middle;
   box-shadow: 0 1px 2px rgba(0,0,0,.2);
   color: #FFFFFF;
 }
+#begin-btn {
+   background: #FF0000;
+   font-size: 24px;
+}
+#submit-btn {
+   background: #FF0000;
+   display: none;
+}
+#next-btn {
+  background: #FF6103;
+  display: none;
+}
+#restart-btn {
+  background: #FF9912;
+  display: none;
+}
 #startQuiz {
   font-size: 20px;
 }
-#questions{
+#questionsContainer{
   font-size: 20px;
   color: #000000;
   font-weight: bold;
   line-height: 22px;
   text-align: left;
   padding-left: 35%;
+  display: none;
 }
 #answersCorrect{
   font-weight: 400;
@@ -45,12 +61,17 @@ body {
   line-height: 1.6em;
   margin-top: 20px;
 }
-
 .title {
-	font-size: 30px;
+	font-size: 35px;
 	font-weight: bold;
 	color: #FF0000;
-	padding-bottom: 5px;
+	padding-bottom: 15px;
+}
+.subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 30px;
 }
 
 
