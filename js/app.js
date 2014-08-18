@@ -71,7 +71,7 @@ $(document).ready(function(){
         if (userAnswer === undefined) {
             $("#answerContainer").html("Please select an option.");
          }
-         else if (userAnswer == quotes[i].correct) {rect);
+         else if (userAnswer == quotes[i].correct) {
             $("#result").html("Correct!");
             userAnswers += 1;
             $("#answerContainer").html(quotes[i].answer);
