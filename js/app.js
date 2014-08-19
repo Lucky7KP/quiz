@@ -9,7 +9,7 @@ $(document).ready(function(){
             quote: "Surely you can't be serious.  I am serious.  And don't call me Shirley.",
             choices: ["Dumb and Dumber", "Austin Powers", "Airplane", "Office Space"],
             correct: 2,
-            answer: "This line was so popular it became a trademark for Leslie Nielsen, much to his own surpirse.",
+            answer: "Airplane. This line was so popular it became a trademark for Leslie Nielsen, much to his own surpirse.",
         },
         {
             quoteNumber: 2,
@@ -17,7 +17,7 @@ $(document).ready(function(){
             choices:["The Adventures fo Baron Munchausen", "One Flew Over the Cuckoo's Nest", "Wayne's World", "The Princess Bride"],
             questionValue: 1,
             correct: 3,
-            answer: "A well know phrase from the Princess Bride, but not as popular as Inigo other famous line: Hello! My name is Inigo Montoya  You killed my father prepare to die.",
+            answer: "The Princess Bride. A well know phrase from the Princess Bride, but not as popular as Inigo other famous line: Hello! My name is Inigo Montoya  You killed my father prepare to die.",
         },
         {
             quoteNumber: 3,
@@ -25,7 +25,7 @@ $(document).ready(function(){
             choices:["The Usual Suspects", "The Exorcist", "Omen", "The Shining"],
             questionValue: 2,
             correct: 0,
-            answer: "The director/writer Brian Singer had specifically written the part of Verbal Kint for Kevin Spacey.",
+            answer: "The Usual Suspects. The director/writer Brian Singer had specifically written the part of Verbal Kint for Kevin Spacey.",
         },
         {
             quoteNumber: 4,
@@ -33,7 +33,7 @@ $(document).ready(function(){
             choices:["The Expendables", "Die Hard", "Fight Club", "Raiders of the Lost Ark"],
             questionValue: 3,
             correct: 2,
-            answer: "The director, David Fincher, said there is a Starbucks cup in literally every frame of the movie.",
+            answer: "Fight Club. The director, David Fincher, said there is a Starbucks cup in literally every frame of the movie.",
         },
         {
             quoteNumber: 5,
@@ -41,7 +41,7 @@ $(document).ready(function(){
             choices:["The Shootist", "Star Wars", "Serenity", "Office Space"],
             questionValue: 4,
             correct: 1,
-            answer: "This line spawned a band called the Nerf Herds who did the Buffy the Vampire TV Show theme.",
+            answer: "Star Wars. This line spawned a band called the Nerf Herds who did the Buffy the Vampire TV Show theme.",
         }
     ];
 
@@ -81,7 +81,7 @@ $(document).ready(function(){
             $("#answerContainer").html("Please select an option.");
          }
          else if (userAnswer == quotes[i].correct) {
-            $("#result").html("Correct!");
+            $("#result").html("Correct! The answer is:");
             userAnswers += 1;
             $("#answerContainer").html(quotes[i].answer);
             $("#submit-btn").hide();
@@ -96,7 +96,7 @@ $(document).ready(function(){
                }
             }
            else {
-            $("#result").html("Incorrect.");
+            $("#result").html("Incorrect. The answer is:");
             $("#answerContainer").html(quotes[i].answer);
             $("#submit-btn").hide();
             $("#next-btn").show();
