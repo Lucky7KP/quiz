@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div id="main">
+	<div id="main">
 	<p class="title">Movie Quote Quiz</p>
 			<div id="startQuiz">
 				<p class="subtitle">Think you know movies?<br /><br /> 
@@ -15,23 +15,13 @@
 			<input type="submit" id="begin-btn" value="Begin">
 			</div>
 			<div id="questionsContainer">
-                
-                <!--You need a place holder to put the text of question
-                so you need a seperate html element such as div to be that place holder
-                it needs to have nothing in it
-                otherwise when you do .html() you are removing everything else in it
-                which in this case is all the radio buttons-->
-                <div id="question"></div>
-                
-                
-                
-				<input type="radio" name="choice" id="choice1" value="0">
-				<span id="firstChoice"></span><br />
-				<input type="radio" name="choice" id="choice2" value="1">
-					<span id="secondChoice"></span><br />
-				<input type="radio" name="choice" id="choice3" value="2">
-					<span id="thirdChoice"></span>	<br />
-				<input type="radio" name="choice" id="choice4" value="3">
+				<input type="radio" name="choice" id="choice1" value="0"><br />
+					<span id="firstChoice"></span>
+				<input type="radio" name="choice" id="choice2" value="1"><br />
+					<span id="secondChoice"></span>
+				<input type="radio" name="choice" id="choice3" value="2"><br />
+					<span id="thirdChoice"></span>	
+				<input type="radio" name="choice" id="choice4" value="3"><br />
 					<span id="fourthChoice"></span>
 			</div>
 			<div id="result"></div>
